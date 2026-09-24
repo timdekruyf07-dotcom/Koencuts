@@ -68,12 +68,25 @@
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-            margin-bottom: 40px;
+            max-width: 550px;
+            margin: 0 auto;
         }
         .contact-box h2 {
             font-size: 2.2em;
             color: #3b3533;
             margin-top: 0;
+        }
+        .contact-box p {
+            font-family: sans-serif;
+            color: #7a706b;
+            margin-bottom: 25px;
+        }
+        .email-display {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #3b3533;
+            margin: 20px 0;
+            font-family: sans-serif;
         }
         .btn {
             display: inline-block;
@@ -85,7 +98,7 @@
             font-family: sans-serif;
             font-weight: bold;
             font-size: 1.05em;
-            margin-top: 20px;
+            margin-top: 15px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: background 0.2s;
         }
@@ -107,7 +120,7 @@
 
     <header>
         <h1>Contact</h1>
-        <p>Heb je een vraag of wil je contact opnemen?</p>
+        <p>Neem gerust contact op</p>
         <nav class="main-nav">
             <a href="index.html">Home</a>
             <a href="diensten.html">Diensten</a>
@@ -117,12 +130,12 @@
 
     <div class="container">
         <div class="contact-box">
-            <h2>Neem contact op</h2>
-            <p>Wil je liever direct een afspraak inplannen? Dat kan heel eenvoudig via onze online agenda.</p>
-            <a href="https://calendly.com/koencuts67/30min" target="_blank" class="btn">Maak hier je afspraak</a>
+            <h2>Heb je een vraag?</h2>
+            <p>Wil je even iets overleggen of heb je een specifieke vraag? Stuur gerust een mailtje. We reageren zo snel mogelijk.</p>
             
-            <p style="margin-top: 35px; color: #7a706b;">Heb je een specifieke vraag? Stuur dan gerust een e-mail naar:<br>
-            <strong style="color: #3b3533;">koencuts67@gmail.com</strong></p>
+            <div class="email-display">koencuts67@gmail.com</div>
+            
+            <a href="mailto:koencuts67@gmail.com" class="btn">Stuur direct een e-mail</a>
         </div>
     </div>
 
