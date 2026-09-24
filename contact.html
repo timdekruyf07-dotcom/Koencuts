@@ -11,64 +11,95 @@
             padding: 0;
             background-color: #fcfbfa;
             color: #4a4543;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         header {
-            background-color: #8c7b70;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/barber-tabel.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 80px 20px;
+            padding: 100px 20px 70px 20px;
             text-align: center;
+            border-bottom: 4px solid #8c7b70;
+            position: relative;
         }
         header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-size: 3.5em;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #f2eeea;
+            margin-bottom: 30px;
+            font-family: sans-serif;
         }
         .main-nav {
-            margin-top: 20px;
+            margin-top: 25px;
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
         }
         .main-nav a {
+            background-color: rgba(255, 255, 255, 0.15);
             color: white;
             text-decoration: none;
-            padding: 8px 18px;
+            padding: 8px 20px;
             border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 20px;
+            border-radius: 30px;
             font-family: sans-serif;
             font-size: 0.9em;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
         }
         .main-nav a:hover, .main-nav a.active {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.35);
         }
         .container {
-            max-width: 700px;
-            margin: 40px auto;
+            max-width: 800px;
+            margin: 50px auto;
             padding: 0 20px;
             text-align: center;
+        }
+        .contact-box {
+            background: white;
+            border: 1px solid #e8e1da;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 40px;
+        }
+        .contact-box h2 {
+            font-size: 2.2em;
+            color: #3b3533;
+            margin-top: 0;
         }
         .btn {
             display: inline-block;
             background-color: #8c7b70;
             color: white;
-            padding: 12px 24px;
+            padding: 14px 28px;
             text-decoration: none;
             border-radius: 4px;
             font-family: sans-serif;
             font-weight: bold;
+            font-size: 1.05em;
             margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.2s;
         }
         .btn:hover {
             background-color: #736359;
         }
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             background-color: #f4efe9;
             color: #7a706b;
-            margin-top: 40px;
+            margin-top: 60px;
             font-size: 0.9em;
+            border-top: 1px solid #e8e1da;
         }
     </style>
 </head>
@@ -85,16 +116,18 @@
     </header>
 
     <div class="container">
-        <h2>Neem contact op</h2>
-        <p>Wil je liever direct een afspraak inplannen? Dat kan heel eenvoudig via onze online agenda.</p>
-        <p><a href="https://calendly.com/JOUW-CALENDLY-LINK" target="_blank" class="btn">Maak hier je afspraak</a></p>
-        
-        <p style="margin-top: 40px;">Heb je een specifieke vraag? Stuur dan gerust een e-mail naar:<br>
-        <strong>koen@koencuts.nl</strong> (of vul hier zijn eigen e-mailadres in)</p>
+        <div class="contact-box">
+            <h2>Neem contact op</h2>
+            <p>Wil je liever direct een afspraak inplannen? Dat kan heel eenvoudig via onze online agenda.</p>
+            <a href="https://calendly.com/JOUW-CALENDLY-LINK" target="_blank" class="btn">Maak hier je afspraak</a>
+            
+            <p style="margin-top: 35px; color: #7a706b;">Heb je een specifieke vraag? Stuur dan gerust een e-mail naar:<br>
+            <strong style="color: #3b3533;">koen@koencuts.nl</strong></p>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 KoenCuts</p>
+        <p>&copy; 2026 KoenCuts - Alle rechten voorbehouden.</p>
     </footer>
 
 </body>
