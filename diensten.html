@@ -62,38 +62,49 @@
             padding: 0 20px;
             text-align: center;
         }
+        .container h2 {
+            font-size: 2.2em;
+            color: #3b3533;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
         .services-list {
             display: flex;
             flex-direction: column;
             gap: 20px;
             text-align: left;
             max-width: 650px;
-            margin: 30px auto;
+            margin: 0 auto 30px auto;
         }
         .service-item {
             background: white;
             border: 1px solid #e8e1da;
-            padding: 25px;
+            padding: 22px 25px;
             border-radius: 6px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            gap: 20px;
         }
         .service-info h3 {
             margin: 0 0 5px 0;
             color: #3b3533;
             font-size: 1.2em;
+            font-family: Georgia, serif;
         }
         .service-info p {
             margin: 0;
             font-size: 0.95em;
             color: #7a706b;
+            font-family: sans-serif;
         }
         .service-price {
             font-weight: bold;
             font-size: 1.15em;
             color: #8c7b70;
+            white-space: nowrap;
+            font-family: sans-serif;
         }
         .btn {
             display: inline-block;
@@ -105,7 +116,7 @@
             font-family: sans-serif;
             font-weight: bold;
             font-size: 1.05em;
-            margin-top: 30px;
+            margin-top: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: background 0.2s;
         }
@@ -141,30 +152,38 @@
         <div class="services-list">
             <div class="service-item">
                 <div class="service-info">
-                    <h3>Herenknippen</h3>
-                    <p>Inclusief wassen, knippen en stylen.</p>
+                    <h3>Buzzcut</h3>
+                    <p>Kort, strak en vlot geknipt.</p>
                 </div>
-                <div class="service-price">€ 22,50</div>
+                <div class="service-price">€ 8,00</div>
             </div>
 
             <div class="service-item">
                 <div class="service-info">
-                    <h3>Baard Trimmen / Verzorgen</h3>
-                    <p>Strak contouren en verzorging met baardolie.</p>
+                    <h3>Knippen / Fade (of allebei)</h3>
+                    <p>Of je nu kiest voor een standaard knipbeurt, een fade, of allebei: de prijs is hetzelfde.</p>
+                </div>
+                <div class="service-price">€ 10,00</div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-info">
+                    <h3>Knippen / Fade + Baard</h3>
+                    <p>De complete behandeling inclusief baardverzorging.</p>
                 </div>
                 <div class="service-price">€ 15,00</div>
             </div>
 
             <div class="service-item">
                 <div class="service-info">
-                    <h3>Combi Deal (Haar + Baard)</h3>
-                    <p>De complete opfrisbeurt voor haar en baard.</p>
+                    <h3>Styling</h3>
+                    <p>Extra optie voor de perfecte afwerking.</p>
                 </div>
-                <div class="service-price">€ 32,50</div>
+                <div class="service-price">+ € 1,50</div>
             </div>
         </div>
 
-        <a href="https://calendly.com/koencuts67/30min" target="_blank" class="btn">Maak hier je afspraak</a>
+        <a href="https://calendly.com/JOUW-CALENDLY-LINK" target="_blank" class="btn">Maak hier je afspraak</a>
     </div>
 
     <footer>
