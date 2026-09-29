@@ -1,211 +1,247 @@
 ```html
 <!DOCTYPE html>
+
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diensten - KoenCuts</title>
+<meta charset="UTF-8">
 
-    <style>
-        body {
-            font-family: Georgia, serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fcfbfa;
-            color: #4a4543;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background-color: #3b3533;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
+<title>Diensten - KoenCuts</title>
 
-        header h1 {
-            font-size: 3em;
-            margin: 0 0 10px 0;
-        }
+<style>
 
-        header p {
-            font-size: 1.1em;
-            margin-bottom: 25px;
-        }
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbfa;
+    color: #4a4543;
+}
 
-        .main-nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/barber-tabel.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px 70px 20px;
+    text-align: center;
+    border-bottom: 4px solid #8c7b70;
+    position: relative;
+}
 
-        .main-nav a {
-            background-color: rgba(255, 255, 255, 0.15);
-            color: white;
-            text-decoration: none;
-            padding: 8px 20px;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 30px;
-            font-family: sans-serif;
-        }
+header h1 {
+    font-size: 3.5em;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
 
-        .main-nav a:hover,
-        .main-nav a.active {
-            background-color: rgba(255, 255, 255, 0.35);
-        }
+header p {
+    font-size: 1.2em;
+    color: #f2eeea;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
 
-        .container {
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
+.main-nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
-        .container h2 {
-            text-align: center;
-            font-size: 2.2em;
-            color: #3b3533;
-            margin-bottom: 35px;
-        }
+.main-nav a {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
 
-        .service-item {
-            background-color: white;
-            border: 1px solid #e8e1da;
-            padding: 25px;
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 6px;
-        }
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: rgba(255, 255, 255, 0.35);
+}
 
-        .service-info h3 {
-            margin: 0;
-            font-size: 1.3em;
-            color: #3b3533;
-        }
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
 
-        .service-price {
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #8c7b70;
-            white-space: nowrap;
-        }
+.container h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #3b3533;
+    margin-bottom: 35px;
+}
 
-        .btn {
-            display: block;
-            width: fit-content;
-            margin: 30px auto 0 auto;
-            background-color: #8c7b70;
-            color: white;
-            padding: 14px 28px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-family: sans-serif;
-            font-weight: bold;
-        }
+.service-item {
+    background-color: white;
+    border: 1px solid #e8e1da;
+    padding: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
 
-        .btn:hover {
-            background-color: #736359;
-        }
+.service-info h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #3b3533;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            background-color: #f4efe9;
-            color: #7a706b;
-            margin-top: 60px;
-            font-size: 0.9em;
-        }
+.service-price {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #8c7b70;
+    white-space: nowrap;
+}
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2.3em;
-            }
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    background-color: #8c7b70;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 
-            .service-item {
-                padding: 20px;
-            }
+.btn:hover {
+    background-color: #736359;
+}
 
-            .service-info h3 {
-                font-size: 1.1em;
-            }
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #f4efe9;
+    color: #7a706b;
+    margin-top: 60px;
+    font-size: 0.9em;
+}
 
-            .service-price {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2.3em;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    .service-info h3 {
+        font-size: 1.1em;
+    }
+
+    .service-price {
+        font-size: 1.1em;
+    }
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Diensten & Prijzen</h1>
-        <p>Kwaliteit en aandacht voor jouw haar</p>
+<header>
 
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="diensten.html" class="active">Diensten</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<h1>Diensten & Prijzen</h1>
 
-    <div class="container">
+<p>Kwaliteit en aandacht voor jouw haar</p>
 
-        <h2>Onze diensten</h2>
+<nav class="main-nav">
 
-        <div class="service-item">
-            <div class="service-info">
-                <h3>Knippen</h3>
-            </div>
+<a href="index.html">Home</a>
 
-            <div class="service-price">
-                € 10,00
-            </div>
-        </div>
+<a href="diensten.html" class="active">Diensten</a>
 
-        <div class="service-item">
-            <div class="service-info">
-                <h3>Faden</h3>
-            </div>
+<a href="contact.html">Contact</a>
 
-            <div class="service-price">
-                € 10,00
-            </div>
-        </div>
+</nav>
 
-        <div class="service-item">
-            <div class="service-info">
-                <h3>Faden + Knippen</h3>
-            </div>
+</header>
 
-            <div class="service-price">
-                € 10,00
-            </div>
-        </div>
+<div class="container">
 
-        <div class="service-item">
-            <div class="service-info">
-                <h3>Faden + Knippen + Baard</h3>
-            </div>
+<h2>Onze diensten</h2>
 
-            <div class="service-price">
-                € 15,00
-            </div>
-        </div>
+<div class="service-item">
 
-        <a href="https://calendly.com/koencuts67/30min" target="_blank" class="btn">
-            Maak hier je afspraak
-        </a>
+<div class="service-info">
+<h3>Knippen</h3>
+</div>
 
-    </div>
+<div class="service-price">
+€ 10,00
+</div>
 
-    <footer>
-        <p>&copy; 2026 KoenCuts - Alle rechten voorbehouden.</p>
-    </footer>
+</div>
+
+<div class="service-item">
+
+<div class="service-info">
+<h3>Faden</h3>
+</div>
+
+<div class="service-price">
+€ 10,00
+</div>
+
+</div>
+
+<div class="service-item">
+
+<div class="service-info">
+<h3>Faden + Knippen</h3>
+</div>
+
+<div class="service-price">
+€ 10,00
+</div>
+
+</div>
+
+<div class="service-item">
+
+<div class="service-info">
+<h3>Faden + Knippen + Baard</h3>
+</div>
+
+<div class="service-price">
+€ 15,00
+</div>
+
+</div>
+
+<a href="https://calendly.com/koencuts67/30min" target="_blank" class="btn">
+Maak hier je afspraak
+</a>
+
+</div>
+
+<footer>
+
+<p>&copy; 2026 KoenCuts - Alle rechten voorbehouden.</p>
+
+</footer>
 
 </body>
 
